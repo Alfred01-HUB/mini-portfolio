@@ -1,0 +1,226 @@
+
+SOGUNLE OLABANJI ALFRED
+
+Matric Number: 240502118
+
+Course Title: CSC-309
+
+Assignment 2
+
+ACTIVITY 1
+
+1. Insertion at the Head of a Singly Linked List (Diagram Trace)
+
+Given the initial list:
+
+10 → 20 → 30
+
+HEAD points to 10.
+
+Before insertion
+
+
+
+HEAD → 10 → 20 → 30 → NULL
+
+Create a new node (value = 5)
+
+
+
+New node: 5 → NULL
+
+Step 1: Point new node to the current head
+
+
+
+5 → 10 → 20 → 30 → NULL
+
+Step 2: Move HEAD to the new node
+
+
+
+HEAD → 5 → 10 → 20 → 30 → NULL
+
+2. Differences: Arrays vs Linked Lists
+
+ArraysLinked ListsStored in contiguous memoryStored in scattered memoryFixed sizeDynamic size (grows/shrinks easily)Fast random access (A[i])Sequential access onlyInsert/delete is costly (may require shift)Insert/delete is easy (pointer updates)3. Time Complexity of Linked List Insertion
+
+At beginning: O(1)
+
+At end: O(n) unless a tail pointer exists (then O(1))
+
+At a position: O(n) due to traversal
+
+ACTIVITY 2
+
+1. Primitive Types vs Abstract Data Types (ADTs)
+
+Primitive types: Built-in basic values like int, float, char.
+
+ADTs: User-defined structures like Stack, Queue, LinkedList.
+
+
+
+They define operations rather than memory layout.
+
+2. Why arrays are static and linked lists dynamic
+
+Arrays: reserved in a fixed memory block at creation.
+
+Linked lists: each node is allocated when needed and linked through pointers.
+
+3. When to use a Linked List instead of an Array
+
+Choose a linked list when:
+
+
+
+You expect many insertions or deletions.
+
+The final size is unknown.
+
+You want flexible memory usage.
+
+4. Real-World Examples
+
+Stack (LIFO):
+
+
+
+Undo/redo features
+
+Browser back button
+
+Function call stack
+
+Queue (FIFO):
+
+
+
+Print queue
+
+Customer service queue
+
+Scheduling and task processing
+
+Linked List:
+
+
+
+Music/playlist navigation
+
+Photo slideshow
+
+Route navigation (next/previous paths)
+
+PART 2
+
+1. Program: Sum of First 10 Natural Numbers
+
+total = 0
+
+for i in range(1, 11):
+
+total += i
+
+print(total) # 55
+
+Answer: 55
+
+2. Fibonacci Series (First 8 Values) Using Dynamic Array
+
+Sequence: 0, 1, 1, 2, 3, 5, 8, 13
+
+Pseudocode
+
+
+
+fib = DynamicArray(capacity=2)
+
+
+
+a = 0
+
+b = 1
+
+fib.append(a)
+
+fib.append(b)
+
+
+
+for i in range(6):
+
+c = a + b
+
+fib.append(c)
+
+a = b
+
+b = c
+
+Output: 0, 1, 1, 2, 3, 5, 8, 13
+
+3. Insert 10, 20, 30, 40, 50 into Dynamic Array (Capacity = 2)
+
+StepArray BeforeCapacityActionInsert 10[]2[10]Insert 20[10]2[10, 20]Insert 30[10, 20]full → 4Resize → [10, 20, 30]Insert 40[10, 20, 30]4[10, 20, 30, 40]Insert 50[10, 20, 30, 40]full → 8Resize → [10, 20, 30, 40, 50]Final Array: [10, 20, 30, 40, 50]
+
+4. Linear Search
+
+Array: [2, 5, 7, 10, 4, 20]
+
+Target: 10
+
+Checks:
+
+
+
+2 → 5 → 7 → 10 found at index 3
+
+Answer: Found at index 3.
+
+5. Binary Search
+
+Sorted array: [1, 3, 5, 7, 9, 11, 13]
+
+Target: 9
+
+Steps:
+
+
+
+mid = 3 → 7 < 9 → search right
+
+mid = 5 → 11 > 9 → search left
+
+mid = 4 → 9 found
+
+Answer: Found at index 4.
+
+6. Time & Space Complexity
+
+Linear Search
+
+
+
+Time: O(1) best, O(n) worst
+
+Space: O(1)
+
+Binary Search
+
+
+
+Time: O(1) best, O(log n) worst
+
+Space: O(1) (iterative)
+
+7. Differences: Stack vs Queue
+
+Stack (LIFO)Queue (FIFO)Insert/remove at topInsert at rear, remove at frontUses push/popUses enqueue/dequeueUsed for reversed orderUsed for first-come-first-servedExample: call stackExample: print queueDirect access to last pushed itemDirect access to first inserted item8. Time Complexity of Stack & Queue Operations
+
+Stack: All operations → O(1)
+
+Queue: All operations → O(1)
+
+
