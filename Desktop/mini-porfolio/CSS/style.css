@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SN Pro", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* HEADER */
+.site-header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.navbar {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: red;
+  font-size: 23px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+/* CTA BUTTON */
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 10px;
+
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background: rgba(255, 0, 0, 0.7);
+  color: #fff;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* HERO TEXT */
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-greeting {
+  color: red;
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* HERO BUTTONS */
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: red;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid red;
+  color: red;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  height: 85vh;
+  object-fit: cover;
+}
